@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar color="dark">
+      <ion-buttons slot="primary">
+          <ion-button>
+              <ion-icon size="large" name="save"></ion-icon>
+            </ion-button>
+        </ion-buttons>
+    <ion-title>Add</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [scrollEvents]="true" force-overscroll="true">
+
+  <!-- <ion-item-divider style="--inner-padding-top:10px; --padding-start:0px;"> -->
+      <ion-input auto-grow="true" style="font-weight: bold; font-size: 20px; color: black; margin-left: 5px;" placeholder="Add Title"></ion-input>
+      <div class="hr"></div>
+      <!-- </ion-item-divider> -->
+
+  <ion-textarea auto-grow="true" style="font-size: 15px; color: black; margin-left: 5px; padding-right: 5px; padding-bottom: 10px" placeholder="Add Title"></ion-textarea>
+
+</ion-content>

@@ -1,5 +1,8 @@
 {
   "name": "memo",
-  "integrations": {},
-  "type": "angular"
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "id": "b2481f7c"
 }
