@@ -1,7 +1,7 @@
 <ion-header>
   <ion-toolbar color="dark">
       <ion-buttons slot="primary">
-          <ion-button>
+          <ion-button (click)="addMemo()">
               <ion-icon size="large" name="save"></ion-icon>
             </ion-button>
         </ion-buttons>
@@ -12,10 +12,10 @@
 <ion-content [scrollEvents]="true" force-overscroll="true">
 
   <!-- <ion-item-divider style="--inner-padding-top:10px; --padding-start:0px;"> -->
-      <ion-input auto-grow="true" style="font-weight: bold; font-size: 20px; color: black; margin-left: 5px;" placeholder="Add Title"></ion-input>
+      <ion-input [(ngModel)]="newMemo.title" auto-grow="true" style="font-weight: bold; font-size: 20px; color: black; margin-left: 5px;" placeholder="Add Title"></ion-input>
       <div class="hr"></div>
       <!-- </ion-item-divider> -->
 
-  <ion-textarea auto-grow="true" style="font-size: 15px; color: black; margin-left: 5px; padding-right: 5px; padding-bottom: 10px" placeholder="Add Title"></ion-textarea>
+  <ion-textarea [(ngModel)]="newMemo.content" auto-grow="true" style="font-size: 15px; color: black; margin-left: 5px; padding-right: 5px; padding-bottom: 10px" placeholder="Add note"></ion-textarea>
 
 </ion-content>
